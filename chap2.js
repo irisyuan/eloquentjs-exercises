@@ -14,11 +14,9 @@ for (var n = 1; n <= 100; n++) {
     output += "Buzz";
   console.log(output || n);
 }
-*/
+
 
 // Problem 3 - Chess Grid
-//var size = prompt("Enter chess size");
-
 var size = 8;
 var output = "";
 
@@ -33,7 +31,7 @@ for (var i=1; i<=size; i++) {
 }
 
 console.log(output + "\n");
-
+*/
 
 
 
