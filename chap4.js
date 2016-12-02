@@ -50,10 +50,12 @@ function reverseArray(oldArray) {
 
 function reverseArrayInPlace(oldArray){
 	var iterations = Math.floor(oldArray.length/2);
-	for (var i=0; i< iterations;i++) {
-		oldArray[i] = oldArray[iterations-i];
-		console.log(i + ": " + oldArray);
-		
+	var counter = oldArray.length-1;
+	for (var i=0; i< iterations; i++) {
+		var temp = oldArray[i];
+		oldArray[i] = oldArray[counter];
+		oldArray[counter] = temp;
+		counter--;
 	}
 	return oldArray;
 }
